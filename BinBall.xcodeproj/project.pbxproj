@@ -14,6 +14,7 @@
 		098949B42331384E00FDB34F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098949B32331384E00FDB34F /* Assets.xcassets */; };
 		098949B72331384E00FDB34F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098949B52331384E00FDB34F /* LaunchScreen.storyboard */; };
 		098949C22331384E00FDB34F /* BinBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098949C12331384E00FDB34F /* BinBallTests.swift */; };
+		098949CE233138FB00FDB34F /* NumberCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098949CD233138FB00FDB34F /* NumberCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		098949BD2331384E00FDB34F /* BinBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		098949C12331384E00FDB34F /* BinBallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinBallTests.swift; sourceTree = "<group>"; };
 		098949C32331384E00FDB34F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		098949CD233138FB00FDB34F /* NumberCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		098949A92331384D00FDB34F /* BinBall */ = {
 			isa = PBXGroup;
 			children = (
+				098949CC2331387700FDB34F /* models */,
 				098949AA2331384D00FDB34F /* AppDelegate.swift */,
 				098949AC2331384D00FDB34F /* SceneDelegate.swift */,
 				098949AE2331384D00FDB34F /* ViewController.swift */,
@@ -97,6 +100,14 @@
 				098949C32331384E00FDB34F /* Info.plist */,
 			);
 			path = BinBallTests;
+			sourceTree = "<group>";
+		};
+		098949CC2331387700FDB34F /* models */ = {
+			isa = PBXGroup;
+			children = (
+				098949CD233138FB00FDB34F /* NumberCollection.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +213,7 @@
 			files = (
 				098949AF2331384D00FDB34F /* ViewController.swift in Sources */,
 				098949AB2331384D00FDB34F /* AppDelegate.swift in Sources */,
+				098949CE233138FB00FDB34F /* NumberCollection.swift in Sources */,
 				098949AD2331384D00FDB34F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
