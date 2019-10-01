@@ -19,7 +19,8 @@ class ViewController: UIViewController {
     var path = UIBezierPath(ovalIn: CGRect(x: 10, y: 600, width: 200, height: 100))
     var initNumber = 1
     lazy var Circle : UIBezierPath = {
-        return UIBezierPath(arcCenter: self.view.center, radius: self.view.frame.width/3, startAngle: 0, endAngle: CGFloat(Double.pi * 2), clockwise: true)
+        let center = CGPoint(x: self.view.center.x - 20, y: self.view.center.y - 20)
+        return UIBezierPath(arcCenter:center , radius: self.view.frame.height/2.7, startAngle: 0, endAngle: CGFloat(Double.pi * 2), clockwise: true)
     }()
     var instantaneousPush : UIPushBehavior!
     
