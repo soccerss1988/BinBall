@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0905D4CD2339177900F5EFB5 /* UIimage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D4CC2339177900F5EFB5 /* UIimage+Extension.swift */; };
+		0905D4CF2339196900F5EFB5 /* Crycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D4CE2339196900F5EFB5 /* Crycle.swift */; };
+		09621663234247D700526BAF /* Crycle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09621662234247D700526BAF /* Crycle.xib */; };
 		098949AB2331384D00FDB34F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098949AA2331384D00FDB34F /* AppDelegate.swift */; };
 		098949AD2331384D00FDB34F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098949AC2331384D00FDB34F /* SceneDelegate.swift */; };
 		098949AF2331384D00FDB34F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098949AE2331384D00FDB34F /* ViewController.swift */; };
@@ -15,6 +18,17 @@
 		098949B72331384E00FDB34F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098949B52331384E00FDB34F /* LaunchScreen.storyboard */; };
 		098949C22331384E00FDB34F /* BinBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098949C12331384E00FDB34F /* BinBallTests.swift */; };
 		098949CE233138FB00FDB34F /* NumberCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098949CD233138FB00FDB34F /* NumberCollection.swift */; };
+		09A439A6233283010040A62D /* 8606-gift-box-effect.json in Resources */ = {isa = PBXBuildFile; fileRef = 09A4399D233283000040A62D /* 8606-gift-box-effect.json */; };
+		09A439A8233283010040A62D /* 6902-exploding-ribbon-and-confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 09A4399F233283000040A62D /* 6902-exploding-ribbon-and-confetti.json */; };
+		09A439A9233283010040A62D /* 9407-dream-catcher.json in Resources */ = {isa = PBXBuildFile; fileRef = 09A439A0233283000040A62D /* 9407-dream-catcher.json */; };
+		09A439AB233283010040A62D /* 1710-balloons-with-string.json in Resources */ = {isa = PBXBuildFile; fileRef = 09A439A2233283000040A62D /* 1710-balloons-with-string.json */; };
+		09A439AC233283010040A62D /* 1739-birthday.json in Resources */ = {isa = PBXBuildFile; fileRef = 09A439A3233283010040A62D /* 1739-birthday.json */; };
+		09A439AD233283010040A62D /* 4695-soft-bouncy-blob.json in Resources */ = {isa = PBXBuildFile; fileRef = 09A439A4233283010040A62D /* 4695-soft-bouncy-blob.json */; };
+		09C9FF7E2333C41100B0F12A /* 8606-gift-box-effect.gif.json in Resources */ = {isa = PBXBuildFile; fileRef = 09C9FF7D2333C41100B0F12A /* 8606-gift-box-effect.gif.json */; };
+		09C9FF802333C57500B0F12A /* agif2opt.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09C9FF7F2333C57500B0F12A /* agif2opt.gif */; };
+		09C9FF822333CF9900B0F12A /* Illus.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09C9FF812333CF9900B0F12A /* Illus.gif */; };
+		70FC10543C01E02245093FCF /* Pods_BinBallTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4780C17C0ACF507A77E82EAE /* Pods_BinBallTests.framework */; };
+		D96AFF3AE061226857618F20 /* Pods_BinBall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4ECCAC2AA0BAB5CAEC5006 /* Pods_BinBall.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0905D4CC2339177900F5EFB5 /* UIimage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimage+Extension.swift"; sourceTree = "<group>"; };
+		0905D4CE2339196900F5EFB5 /* Crycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crycle.swift; sourceTree = "<group>"; };
+		09621662234247D700526BAF /* Crycle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Crycle.xib; sourceTree = "<group>"; };
 		098949A72331384D00FDB34F /* BinBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		098949AA2331384D00FDB34F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		098949AC2331384D00FDB34F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +57,21 @@
 		098949C12331384E00FDB34F /* BinBallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinBallTests.swift; sourceTree = "<group>"; };
 		098949C32331384E00FDB34F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		098949CD233138FB00FDB34F /* NumberCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCollection.swift; sourceTree = "<group>"; };
+		09A4399D233283000040A62D /* 8606-gift-box-effect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "8606-gift-box-effect.json"; sourceTree = "<group>"; };
+		09A4399F233283000040A62D /* 6902-exploding-ribbon-and-confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "6902-exploding-ribbon-and-confetti.json"; sourceTree = "<group>"; };
+		09A439A0233283000040A62D /* 9407-dream-catcher.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9407-dream-catcher.json"; sourceTree = "<group>"; };
+		09A439A2233283000040A62D /* 1710-balloons-with-string.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "1710-balloons-with-string.json"; sourceTree = "<group>"; };
+		09A439A3233283010040A62D /* 1739-birthday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "1739-birthday.json"; sourceTree = "<group>"; };
+		09A439A4233283010040A62D /* 4695-soft-bouncy-blob.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4695-soft-bouncy-blob.json"; sourceTree = "<group>"; };
+		09C9FF7D2333C41100B0F12A /* 8606-gift-box-effect.gif.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "8606-gift-box-effect.gif.json"; path = "../../../../../Downloads/8606-gift-box-effect.gif.json"; sourceTree = "<group>"; };
+		09C9FF7F2333C57500B0F12A /* agif2opt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = agif2opt.gif; path = ../../../../agif2opt.gif; sourceTree = "<group>"; };
+		09C9FF812333CF9900B0F12A /* Illus.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Illus.gif; path = ../../../../../Downloads/Illus.gif; sourceTree = "<group>"; };
+		0C4ECCAC2AA0BAB5CAEC5006 /* Pods_BinBall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BinBall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C99D10E2E84056E9C5EC20 /* Pods-BinBall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinBall.release.xcconfig"; path = "Target Support Files/Pods-BinBall/Pods-BinBall.release.xcconfig"; sourceTree = "<group>"; };
+		4780C17C0ACF507A77E82EAE /* Pods_BinBallTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BinBallTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AC46BD54BE6CCA5AB07734B /* Pods-BinBallTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinBallTests.release.xcconfig"; path = "Target Support Files/Pods-BinBallTests/Pods-BinBallTests.release.xcconfig"; sourceTree = "<group>"; };
+		9AF8881C1A737B360F107794 /* Pods-BinBallTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinBallTests.debug.xcconfig"; path = "Target Support Files/Pods-BinBallTests/Pods-BinBallTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBEA076A1B49929C1CD4BCFA /* Pods-BinBall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinBall.debug.xcconfig"; path = "Target Support Files/Pods-BinBall/Pods-BinBall.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96AFF3AE061226857618F20 /* Pods_BinBall.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70FC10543C01E02245093FCF /* Pods_BinBallTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +100,8 @@
 				098949A92331384D00FDB34F /* BinBall */,
 				098949C02331384E00FDB34F /* BinBallTests */,
 				098949A82331384D00FDB34F /* Products */,
+				3F6EBA007BAFD88A81A6F325 /* Pods */,
+				9CEC488F1D39564C08051122 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +117,7 @@
 		098949A92331384D00FDB34F /* BinBall */ = {
 			isa = PBXGroup;
 			children = (
+				098949CF23326C9900FDB34F /* lotties */,
 				098949CC2331387700FDB34F /* models */,
 				098949AA2331384D00FDB34F /* AppDelegate.swift */,
 				098949AC2331384D00FDB34F /* SceneDelegate.swift */,
@@ -89,6 +126,7 @@
 				098949B32331384E00FDB34F /* Assets.xcassets */,
 				098949B52331384E00FDB34F /* LaunchScreen.storyboard */,
 				098949B82331384E00FDB34F /* Info.plist */,
+				0905D4CC2339177900F5EFB5 /* UIimage+Extension.swift */,
 			);
 			path = BinBall;
 			sourceTree = "<group>";
@@ -106,8 +144,46 @@
 			isa = PBXGroup;
 			children = (
 				098949CD233138FB00FDB34F /* NumberCollection.swift */,
+				0905D4CE2339196900F5EFB5 /* Crycle.swift */,
+				09621662234247D700526BAF /* Crycle.xib */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		098949CF23326C9900FDB34F /* lotties */ = {
+			isa = PBXGroup;
+			children = (
+				09C9FF812333CF9900B0F12A /* Illus.gif */,
+				09C9FF7D2333C41100B0F12A /* 8606-gift-box-effect.gif.json */,
+				09A439A2233283000040A62D /* 1710-balloons-with-string.json */,
+				09A439A3233283010040A62D /* 1739-birthday.json */,
+				09A439A4233283010040A62D /* 4695-soft-bouncy-blob.json */,
+				09A4399F233283000040A62D /* 6902-exploding-ribbon-and-confetti.json */,
+				09A4399D233283000040A62D /* 8606-gift-box-effect.json */,
+				09A439A0233283000040A62D /* 9407-dream-catcher.json */,
+				09C9FF7F2333C57500B0F12A /* agif2opt.gif */,
+			);
+			path = lotties;
+			sourceTree = "<group>";
+		};
+		3F6EBA007BAFD88A81A6F325 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBEA076A1B49929C1CD4BCFA /* Pods-BinBall.debug.xcconfig */,
+				10C99D10E2E84056E9C5EC20 /* Pods-BinBall.release.xcconfig */,
+				9AF8881C1A737B360F107794 /* Pods-BinBallTests.debug.xcconfig */,
+				7AC46BD54BE6CCA5AB07734B /* Pods-BinBallTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9CEC488F1D39564C08051122 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C4ECCAC2AA0BAB5CAEC5006 /* Pods_BinBall.framework */,
+				4780C17C0ACF507A77E82EAE /* Pods_BinBallTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 098949C62331384E00FDB34F /* Build configuration list for PBXNativeTarget "BinBall" */;
 			buildPhases = (
+				134039354BCAC003FEFCFC1B /* [CP] Check Pods Manifest.lock */,
 				098949A32331384D00FDB34F /* Sources */,
 				098949A42331384D00FDB34F /* Frameworks */,
 				098949A52331384D00FDB34F /* Resources */,
+				4C4370AE971A40B54F0D9EAB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 098949C92331384E00FDB34F /* Build configuration list for PBXNativeTarget "BinBallTests" */;
 			buildPhases = (
+				BD94F1DF9EE78A39477648AB /* [CP] Check Pods Manifest.lock */,
 				098949B92331384E00FDB34F /* Sources */,
 				098949BA2331384E00FDB34F /* Frameworks */,
 				098949BB2331384E00FDB34F /* Resources */,
@@ -192,8 +271,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				098949B72331384E00FDB34F /* LaunchScreen.storyboard in Resources */,
+				09A439A8233283010040A62D /* 6902-exploding-ribbon-and-confetti.json in Resources */,
+				09C9FF7E2333C41100B0F12A /* 8606-gift-box-effect.gif.json in Resources */,
+				09A439AB233283010040A62D /* 1710-balloons-with-string.json in Resources */,
+				09A439AC233283010040A62D /* 1739-birthday.json in Resources */,
+				09C9FF802333C57500B0F12A /* agif2opt.gif in Resources */,
+				09C9FF822333CF9900B0F12A /* Illus.gif in Resources */,
+				09A439A6233283010040A62D /* 8606-gift-box-effect.json in Resources */,
 				098949B42331384E00FDB34F /* Assets.xcassets in Resources */,
+				09621663234247D700526BAF /* Crycle.xib in Resources */,
 				098949B22331384D00FDB34F /* Main.storyboard in Resources */,
+				09A439AD233283010040A62D /* 4695-soft-bouncy-blob.json in Resources */,
+				09A439A9233283010040A62D /* 9407-dream-catcher.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,15 +295,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		134039354BCAC003FEFCFC1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BinBall-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C4370AE971A40B54F0D9EAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BinBall/Pods-BinBall-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BinBall/Pods-BinBall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD94F1DF9EE78A39477648AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BinBallTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		098949A32331384D00FDB34F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				098949AF2331384D00FDB34F /* ViewController.swift in Sources */,
+				0905D4CD2339177900F5EFB5 /* UIimage+Extension.swift in Sources */,
 				098949AB2331384D00FDB34F /* AppDelegate.swift in Sources */,
 				098949CE233138FB00FDB34F /* NumberCollection.swift in Sources */,
 				098949AD2331384D00FDB34F /* SceneDelegate.swift in Sources */,
+				0905D4CF2339196900F5EFB5 /* Crycle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +532,7 @@
 		};
 		098949C72331384E00FDB34F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBEA076A1B49929C1CD4BCFA /* Pods-BinBall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,7 +542,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.jHuang.BinBall;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.jHuang.BinBall.answ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -390,6 +551,7 @@
 		};
 		098949C82331384E00FDB34F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10C99D10E2E84056E9C5EC20 /* Pods-BinBall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -399,7 +561,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.jHuang.BinBall;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.jHuang.BinBall.answ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -408,6 +570,7 @@
 		};
 		098949CA2331384E00FDB34F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF8881C1A737B360F107794 /* Pods-BinBallTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -430,6 +593,7 @@
 		};
 		098949CB2331384E00FDB34F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AC46BD54BE6CCA5AB07734B /* Pods-BinBallTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

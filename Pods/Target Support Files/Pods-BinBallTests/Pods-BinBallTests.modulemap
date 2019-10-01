@@ -1,0 +1,6 @@
+framework module Pods_BinBallTests {
+  umbrella header "Pods-BinBallTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
