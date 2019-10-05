@@ -10,13 +10,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Crycle" customModule="BinBall" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="354" height="332"/>
+            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="46" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaT-rD-ZX2">
-                    <rect key="frame" x="158.5" y="148" width="37" height="36"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <nil key="textColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaT-rD-ZX2">
+                    <rect key="frame" x="1.5" y="1.5" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="ts2-ea-FOp"/>
+                        <constraint firstAttribute="width" constant="45" id="ty7-6c-GCF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -28,7 +32,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="Number" destination="qaT-rD-ZX2" id="XDH-2p-MZO"/>
+                <outlet property="numberLab" destination="qaT-rD-ZX2" id="HlD-9X-PT1"/>
             </connections>
             <point key="canvasLocation" x="94.20289855072464" y="-54.910714285714285"/>
         </view>

@@ -10,8 +10,9 @@
 		0905D4CD2339177900F5EFB5 /* UIimage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D4CC2339177900F5EFB5 /* UIimage+Extension.swift */; };
 		0905D4CF2339196900F5EFB5 /* Crycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D4CE2339196900F5EFB5 /* Crycle.swift */; };
 		09621663234247D700526BAF /* Crycle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09621662234247D700526BAF /* Crycle.xib */; };
+		09621667234886B500526BAF /* SeletedBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09621665234799F400526BAF /* SeletedBall.swift */; };
+		09621668234887B400526BAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098949AC2331384D00FDB34F /* SceneDelegate.swift */; };
 		098949AB2331384D00FDB34F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098949AA2331384D00FDB34F /* AppDelegate.swift */; };
-		098949AD2331384D00FDB34F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098949AC2331384D00FDB34F /* SceneDelegate.swift */; };
 		098949AF2331384D00FDB34F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098949AE2331384D00FDB34F /* ViewController.swift */; };
 		098949B22331384D00FDB34F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098949B02331384D00FDB34F /* Main.storyboard */; };
 		098949B42331384E00FDB34F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098949B32331384E00FDB34F /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		0905D4CC2339177900F5EFB5 /* UIimage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimage+Extension.swift"; sourceTree = "<group>"; };
 		0905D4CE2339196900F5EFB5 /* Crycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crycle.swift; sourceTree = "<group>"; };
 		09621662234247D700526BAF /* Crycle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Crycle.xib; sourceTree = "<group>"; };
+		09621665234799F400526BAF /* SeletedBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeletedBall.swift; sourceTree = "<group>"; };
 		098949A72331384D00FDB34F /* BinBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		098949AA2331384D00FDB34F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		098949AC2331384D00FDB34F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09621664234799B800526BAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09621665234799F400526BAF /* SeletedBall.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0989499E2331384D00FDB34F = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +127,7 @@
 		098949A92331384D00FDB34F /* BinBall */ = {
 			isa = PBXGroup;
 			children = (
+				09621664234799B800526BAF /* View */,
 				098949CF23326C9900FDB34F /* lotties */,
 				098949CC2331387700FDB34F /* models */,
 				098949AA2331384D00FDB34F /* AppDelegate.swift */,
@@ -370,10 +381,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				098949AF2331384D00FDB34F /* ViewController.swift in Sources */,
+				09621668234887B400526BAF /* SceneDelegate.swift in Sources */,
+				09621667234886B500526BAF /* SeletedBall.swift in Sources */,
 				0905D4CD2339177900F5EFB5 /* UIimage+Extension.swift in Sources */,
 				098949AB2331384D00FDB34F /* AppDelegate.swift in Sources */,
 				098949CE233138FB00FDB34F /* NumberCollection.swift in Sources */,
-				098949AD2331384D00FDB34F /* SceneDelegate.swift in Sources */,
 				0905D4CF2339196900F5EFB5 /* Crycle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
