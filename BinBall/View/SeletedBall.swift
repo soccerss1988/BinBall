@@ -13,6 +13,9 @@ class SeletedBall: UICollectionViewCell {
     @IBOutlet weak var numberLab: UILabel!
     
     override func layoutSubviews() {
-        super.layoutSubviews()        
+        super.layoutSubviews()
+        UIView.animate(withDuration: 1) {
+            self.bgView.alpha = 1
+        }
     }
 }

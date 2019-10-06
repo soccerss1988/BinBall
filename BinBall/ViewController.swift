@@ -24,36 +24,20 @@ class ViewController: UIViewController {
     var balls = [Crycle]()
     var initNumber = 1
     var timer : Timer?
+    var selectedBalls = [Crycle]()
         
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         self.initDiynamic(balls: self.balls)
         self.animator.addBehavior(self.collision)
-//        self.collectionView.collectionViewLayout = self.collectionLayout()
     }
     
-    func collectionLayout() -> UICollectionViewFlowLayout {
-        let layout = UICollectionViewFlowLayout()
-        let inset : CGFloat = 5
-        layout.sectionInset = UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset);
-
-        // 設置每一行的間距
-        layout.minimumLineSpacing = inset
-        
-        
-        // 設置每個 cell 的尺寸
-        let part : CGFloat = 2
-        let size = self.collectionView.frame.size.width - 4*(inset)
-        layout.itemSize = CGSize(width:CGFloat(size)/part,height:CGFloat(size)/part)
-         return layout
-    }
     
     func darwCircle(In:UIView,center:CGPoint,radius:CGFloat) {
         let circlePath = self.darwCircleBezierPath(center: center, radius: radius)
@@ -165,7 +149,11 @@ class ViewController: UIViewController {
         
         
         //add selection ball in collecion view
+        self.selectedBalls.append(selectBall)
         //reload collecion
+        var lastItemIndex = NSIndexPath(item:self.selectedBalls.count , section: 0)
+        self.collectionView.scrollToItem(at: lastItemIndex as IndexPath, at: .bottom, animated: true)
+        self.collectionView.reloadData()
         //with animaiotn
         
         
@@ -188,7 +176,8 @@ class ViewController: UIViewController {
         }
         
         //remvoe
-        
+        self.selectedBalls.removeAll()
+        self.collectionView.reloadData()
        
     }
     
@@ -199,15 +188,16 @@ class ViewController: UIViewController {
 }
 
 //MARK: UIcollectionview delegate
-extension UIViewController : UICollectionViewDelegate, UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout {
+extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout {
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return self.selectedBalls.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "selectedBallCell", for: indexPath) as! SeletedBall
-        cell.numberLab.text = String(indexPath.row + 1)
+        let theball = self.selectedBalls[indexPath.row]
+        cell.numberLab.text = theball.numberLab.text!
         return cell
     }
     
