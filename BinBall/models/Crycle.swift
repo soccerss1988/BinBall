@@ -9,10 +9,11 @@
 import UIKit
 
 class Crycle: UIView {
-    @IBOutlet weak var Number:UILabel!
-    let strokeColor = UIColor.blue.cgColor
-    let fillColor = UIColor.blue.withAlphaComponent(0.5).cgColor
-    var lineWidth: CGFloat = 3
+    @IBOutlet weak var numberLab:UILabel!
+    var theNumber = 0
+    let strokeColor = UIColor.orange.cgColor
+    let fillColor = UIColor.yellow.withAlphaComponent(0.9).cgColor
+    var lineWidth: CGFloat = 1
     lazy var shapeLayer: CAShapeLayer = {
         let _shapeLayer = CAShapeLayer()
         _shapeLayer.strokeColor = self.strokeColor
@@ -20,20 +21,28 @@ class Crycle: UIView {
         return _shapeLayer
     }()
     
+    lazy var textlayer :CATextLayer = {
+        let textlayer = CATextLayer()
+        textlayer.foregroundColor = UIColor.black.cgColor
+        return textlayer
+    }()
+    
     static func instance(owner:Any) -> Crycle {
         return Bundle.main.loadNibNamed("Crycle", owner: owner, options: nil)?.last as! Crycle
     }
     
-    func setBall(number: String) {
-        self.Number.text = number
+    func aweakformnib() {
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
         layer.addSublayer(shapeLayer)
         shapeLayer.lineWidth = lineWidth
         let center = CGPoint(x: bounds.midX, y: bounds.midY)
         shapeLayer.path = circularPath(lineWidth: lineWidth, center: center).cgPath
+        
+        self.bringSubviewToFront(self.numberLab)
     }
     
     private func circularPath(lineWidth: CGFloat = 0, center: CGPoint = .zero) -> UIBezierPath {
