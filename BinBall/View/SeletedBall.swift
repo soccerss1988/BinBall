@@ -13,9 +13,6 @@ class SeletedBall: UICollectionViewCell {
     @IBOutlet weak var numberLab: UILabel!
     
     override func layoutSubviews() {
-        super.layoutSubviews()
-//        self.bgView.layer.cornerRadius = self.bgView.frame.size.width/2
-//        self.bgView.layer.masksToBounds = true
-        
+        super.layoutSubviews()        
     }
 }

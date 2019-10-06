@@ -117,6 +117,8 @@ class ViewController: UIViewController {
             self.addNewBall(number: initNumber, radius: 48)
             initNumber += 1
         }
+        
+        self.timer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(moving(_:)), userInfo: nil, repeats: false)
     }
     
     func addNewBall(number: Int, radius:CGFloat) {
@@ -129,7 +131,7 @@ class ViewController: UIViewController {
         self.updateDiynamic(newBall: newball)
     }
     
-    @IBAction func moving(_ sender: Any) {
+   @objc @IBAction func moving(_ sender: Any) {
         self.timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(InstantPush), userInfo: nil, repeats: true)
     }
     
@@ -160,6 +162,13 @@ class ViewController: UIViewController {
             initNumber = 1
             self.clearAction(self)
         }
+        
+        
+        //add selection ball in collecion view
+        //reload collecion
+        //with animaiotn
+        
+        
     }
     
     @IBAction func clearAction(_ sender: Any) {

@@ -96,16 +96,8 @@
                                     <action selector="addAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xfh-Xc-ckm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deL-oU-hr2">
-                                <rect key="frame" x="40" y="108" width="90" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="MOVE"/>
-                                <connections>
-                                    <action selector="moving:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3JI-Cx-wzb"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4u-2x-gmE">
-                                <rect key="frame" x="40" y="170" width="90" height="42"/>
+                                <rect key="frame" x="40" y="103" width="89" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="SELECT"/>
                                 <connections>
@@ -113,7 +105,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Maz-HQ-lbW">
-                                <rect key="frame" x="40" y="232" width="90" height="48"/>
+                                <rect key="frame" x="40" y="165" width="89" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
@@ -125,25 +117,19 @@
                         <constraints>
                             <constraint firstItem="Maz-HQ-lbW" firstAttribute="trailing" secondItem="m4u-2x-gmE" secondAttribute="trailing" id="0NQ-l5-dHN"/>
                             <constraint firstItem="baO-Tg-zbC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="0O7-WO-opz"/>
-                            <constraint firstItem="m4u-2x-gmE" firstAttribute="trailing" secondItem="deL-oU-hr2" secondAttribute="trailing" id="0gQ-Lh-SOy"/>
                             <constraint firstItem="Maz-HQ-lbW" firstAttribute="top" secondItem="m4u-2x-gmE" secondAttribute="bottom" constant="20" id="0jV-UI-3Zz"/>
-                            <constraint firstItem="deL-oU-hr2" firstAttribute="width" secondItem="baO-Tg-zbC" secondAttribute="width" id="23K-lz-Fu6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qeX-QL-YRO" secondAttribute="bottom" constant="20" id="9lS-8r-QWR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B0f-vH-Mqf" secondAttribute="bottom" constant="70" id="Bxp-tc-5lf"/>
                             <constraint firstItem="B0f-vH-Mqf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="I51-yr-AT1"/>
                             <constraint firstItem="B0f-vH-Mqf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IvL-WQ-cfU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qeX-QL-YRO" secondAttribute="trailing" constant="20" id="Kt4-iP-E1p"/>
-                            <constraint firstItem="m4u-2x-gmE" firstAttribute="top" secondItem="deL-oU-hr2" secondAttribute="bottom" constant="20" id="Pr5-25-0ZZ"/>
-                            <constraint firstItem="deL-oU-hr2" firstAttribute="trailing" secondItem="baO-Tg-zbC" secondAttribute="trailing" id="Wur-CF-UrX"/>
                             <constraint firstItem="baO-Tg-zbC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Y9w-XJ-VPr"/>
-                            <constraint firstItem="deL-oU-hr2" firstAttribute="leading" secondItem="baO-Tg-zbC" secondAttribute="leading" id="ZC4-lg-fdI"/>
+                            <constraint firstItem="m4u-2x-gmE" firstAttribute="top" secondItem="baO-Tg-zbC" secondAttribute="bottom" constant="15" id="Ybh-SJ-2xD"/>
                             <constraint firstItem="qeX-QL-YRO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cv0-OX-VAD"/>
-                            <constraint firstItem="deL-oU-hr2" firstAttribute="top" secondItem="baO-Tg-zbC" secondAttribute="bottom" constant="20" id="dLE-7h-FaK"/>
+                            <constraint firstItem="m4u-2x-gmE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="jJO-hc-oH7"/>
                             <constraint firstItem="Maz-HQ-lbW" firstAttribute="width" secondItem="m4u-2x-gmE" secondAttribute="width" id="kq6-V4-YOI"/>
                             <constraint firstItem="B0f-vH-Mqf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="2/2.3" id="o7V-SH-fzh"/>
-                            <constraint firstItem="m4u-2x-gmE" firstAttribute="width" secondItem="deL-oU-hr2" secondAttribute="width" id="qPr-pg-EtT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B0f-vH-Mqf" secondAttribute="bottom" constant="70" id="u7N-i0-qmH"/>
-                            <constraint firstItem="m4u-2x-gmE" firstAttribute="leading" secondItem="deL-oU-hr2" secondAttribute="leading" id="u7W-0X-moQ"/>
                             <constraint firstItem="Maz-HQ-lbW" firstAttribute="leading" secondItem="m4u-2x-gmE" secondAttribute="leading" id="ye7-bV-rJ2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

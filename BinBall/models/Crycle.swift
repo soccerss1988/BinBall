@@ -41,8 +41,7 @@ class Crycle: UIView {
         shapeLayer.lineWidth = lineWidth
         let center = CGPoint(x: bounds.midX, y: bounds.midY)
         shapeLayer.path = circularPath(lineWidth: lineWidth, center: center).cgPath
-        
-        
+                
 //        add labeltextlayer
         textlayer.frame = self.numberLab.frame
         self.textlayer.string = String(theNumber)
