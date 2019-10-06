@@ -13,7 +13,7 @@ class Crycle: UIView {
     var theNumber = 0
     let strokeColor = UIColor.orange.cgColor
     let fillColor = UIColor.yellow.withAlphaComponent(0.9).cgColor
-    var lineWidth: CGFloat = 3
+    var lineWidth: CGFloat = 1
     lazy var shapeLayer: CAShapeLayer = {
         let _shapeLayer = CAShapeLayer()
         _shapeLayer.strokeColor = self.strokeColor
@@ -41,12 +41,8 @@ class Crycle: UIView {
         shapeLayer.lineWidth = lineWidth
         let center = CGPoint(x: bounds.midX, y: bounds.midY)
         shapeLayer.path = circularPath(lineWidth: lineWidth, center: center).cgPath
-                
-//        add labeltextlayer
-        textlayer.frame = self.numberLab.frame
-        self.textlayer.string = String(theNumber)
-        self.textlayer.alignmentMode = .center
-        self.layer.addSublayer(self.textlayer)
+        
+        self.bringSubviewToFront(self.numberLab)
     }
     
     private func circularPath(lineWidth: CGFloat = 0, center: CGPoint = .zero) -> UIBezierPath {

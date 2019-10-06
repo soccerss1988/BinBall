@@ -14,20 +14,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaT-rD-ZX2">
-                    <rect key="frame" x="1.5" y="1.5" width="45" height="45"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="45" id="ts2-ea-FOp"/>
-                        <constraint firstAttribute="width" constant="45" id="ty7-6c-GCF"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <rect key="frame" x="5" y="5" width="38" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="qaT-rD-ZX2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FkM-tl-v2h"/>
-                <constraint firstItem="qaT-rD-ZX2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="m7B-xE-ohE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qaT-rD-ZX2" secondAttribute="bottom" constant="5" id="6Hu-H2-ccv"/>
+                <constraint firstItem="qaT-rD-ZX2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="RhD-WM-AeO"/>
+                <constraint firstAttribute="trailing" secondItem="qaT-rD-ZX2" secondAttribute="trailing" constant="5" id="TFc-8k-udW"/>
+                <constraint firstItem="qaT-rD-ZX2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="hdJ-VZ-RRr"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
