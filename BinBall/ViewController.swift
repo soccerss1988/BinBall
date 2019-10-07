@@ -137,26 +137,25 @@ class ViewController: UIViewController {
     
     @IBAction func selectAction(_ sender: Any) {
         let totoalCount = self.balls.count
-        let selectedIndex = Int(arc4random()) % totoalCount
-        let selectBall = self.balls[selectedIndex]
-        print(selectBall.numberLab.text!)
-        self.balls.remove(at: selectedIndex)
-        self.removeCollision(ball: selectBall)
-        if self.balls.count == 0 {
-            initNumber = 1
-            self.clearAction(self)
+        if totoalCount > 0 {
+            let selectedIndex = Int(arc4random()) % totoalCount
+            let selectBall = self.balls[selectedIndex]
+            print(selectBall.numberLab.text!)
+            self.balls.remove(at: selectedIndex)
+            self.removeCollision(ball: selectBall)
+            if self.balls.count == 0 {
+                initNumber = 1
+                self.clearAction(self)
+            }
+            
+            //add selection ball in collecion view
+            self.selectedBalls.append(selectBall)
+            //reload collecion
+            let lastItemIndex = NSIndexPath(item:self.selectedBalls.count , section: 0)
+            self.collectionView.scrollToItem(at: lastItemIndex as IndexPath, at: .bottom, animated: true)
+            self.collectionView.reloadData()
+            //with animaiotn
         }
-        
-        
-        //add selection ball in collecion view
-        self.selectedBalls.append(selectBall)
-        //reload collecion
-        var lastItemIndex = NSIndexPath(item:self.selectedBalls.count , section: 0)
-        self.collectionView.scrollToItem(at: lastItemIndex as IndexPath, at: .bottom, animated: true)
-        self.collectionView.reloadData()
-        //with animaiotn
-        
-        
     }
     
     @IBAction func clearAction(_ sender: Any) {
