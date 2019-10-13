@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var ballContainView: UIView!
+    @IBOutlet weak var rewardView: UIView!
     
     //MARK:- UIdynamic property
     var animator : UIDynamicAnimator!
@@ -36,7 +37,11 @@ class ViewController: UIViewController {
         return self.view.getLottieAnimation("balloons", loopMode: .loop)
     }()
     
-        
+    lazy var rewardLottieView : AnimationView = {
+        return self.view.getLottieAnimation("reward", loopMode: .loop)
+    }()
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.delegate = self
@@ -86,7 +91,7 @@ class ViewController: UIViewController {
         
         //彈性
         self.bevar = UIDynamicItemBehavior(items: balls)
-        self.bevar.elasticity = 0.85
+        self.bevar.elasticity = 0.9
         self.animator.addBehavior(self.bevar)
         
         //gra
@@ -111,11 +116,12 @@ class ViewController: UIViewController {
         self.ballContainView.layer.masksToBounds = true
         
         var size : CGFloat = 250
-//        self.giftLottieView.frame = CGRect(x: self.ballContainView.frame.minX - size/5, y: self.ballContainView.frame.maxY - size, width: size, height: size)
-//
-//        size = 300
-//        self.winnerLottieView.frame = CGRect(x: self.ballContainView.frame.maxX - size/2, y: self.ballContainView.frame.maxY - size, width: size, height: size)
+        self.giftLottieView.frame = CGRect(x: self.ballContainView.frame.minX - size/5, y: self.ballContainView.frame.maxY - size, width: size, height: size)
+
+        size = 300
+        self.winnerLottieView.frame = CGRect(x: self.ballContainView.frame.maxX - size/2, y: self.ballContainView.frame.maxY - size, width: size, height: size)
         
+        self.rewardLottieView.frame = self.rewardView.bounds
     }
     
     
@@ -146,7 +152,7 @@ class ViewController: UIViewController {
     //順間推力
     @objc func InstantPush() {
         var bb = [Crycle]()
-        for _ in 0 ..< self.balls.count/4 {
+        for _ in 0 ..< self.balls.count/7 {
             let getball = Int(arc4random()) % Int(self.balls.count)
             bb.append(self.balls[getball])
         }
@@ -159,8 +165,7 @@ class ViewController: UIViewController {
         if direction == 0 {
             acr = -acr
         }
-        print("push agnle = \(acr)")
-        self.instantaneousPush?.setAngle(CGFloat(acr), magnitude: 3)
+        self.instantaneousPush?.setAngle(CGFloat(acr), magnitude: 4)
         self.animator.addBehavior(self.instantaneousPush)
     }
     
@@ -176,6 +181,9 @@ class ViewController: UIViewController {
                 self.clearAction(self)
             }
             
+            self.rewardLottieView.loopMode = .playOnce
+            self.rewardLottieView.animationSpeed = 3
+            self.rewardLottieView.play()
             //add selection ball in collecion view
             self.selectedBalls.append(selectBall)
             //reload collecion
@@ -184,6 +192,8 @@ class ViewController: UIViewController {
             //with animaiotn
             let lastItemIndex = NSIndexPath(item:self.selectedBalls.count - 1 , section: 0)
             self.collectionView.scrollToItem(at: lastItemIndex as IndexPath, at: .bottom, animated: true)
+            
+            
         }
     }
     
@@ -217,11 +227,18 @@ class ViewController: UIViewController {
     
     func testLottie() {
         self.view.addSubview(self.winnerLottieView)
-        self.view.bringSubviewToFront(self.winnerLottieView)
+//        self.view.bringSubviewToFront(self.winnerLottieView)
         self.view.addSubview(self.giftLottieView)
-        self.view.bringSubviewToFront(self.giftLottieView)
+//        self.view.bringSubviewToFront(self.giftLottieView)
+        self.rewardView.addSubview(self.rewardLottieView)
+        
         self.giftLottieView.play(fromFrame: 1, toFrame: 20, loopMode: .playOnce, completion: nil)
         self.winnerLottieView.play(fromFrame: 20, toFrame: 30, loopMode: .playOnce, completion: nil)
+        
+        self.rewardLottieView.loopMode = .playOnce
+        self.rewardLottieView.animationSpeed = 3
+        self.rewardLottieView.play()
+        
     }
 }
 

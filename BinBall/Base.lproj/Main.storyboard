@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qeX-QL-YRO">
-                                <rect key="frame" x="1180" y="41" width="167" height="963"/>
+                                <rect key="frame" x="1180" y="190" width="167" height="814"/>
                                 <color key="backgroundColor" red="0.741392229629938" green="0.91971032914982154" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="94x-Wm-Pl2">
                                     <size key="itemSize" width="110" height="110"/>
@@ -133,19 +133,29 @@
                                 <rect key="frame" x="-20" y="0.0" width="372" height="275"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ie-QQ-UFU">
+                                <rect key="frame" x="1180" y="16" width="166" height="166"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1ie-QQ-UFU" secondAttribute="height" id="DWv-h6-I3M"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qeX-QL-YRO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="0Yc-9q-gqr"/>
+                            <constraint firstItem="1ie-QQ-UFU" firstAttribute="leading" secondItem="B0f-vH-Mqf" secondAttribute="trailing" constant="74.5" id="02z-oa-Nbm"/>
                             <constraint firstItem="qeX-QL-YRO" firstAttribute="leading" secondItem="B0f-vH-Mqf" secondAttribute="trailing" constant="74.5" id="3ye-j6-9U3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Maz-HQ-lbW" secondAttribute="bottom" constant="35" id="74W-HZ-zPK"/>
                             <constraint firstItem="V3z-sR-RBL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9Ug-zs-qnk"/>
                             <constraint firstItem="baO-Tg-zbC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="B04-O1-MGH"/>
+                            <constraint firstItem="qeX-QL-YRO" firstAttribute="top" secondItem="1ie-QQ-UFU" secondAttribute="bottom" constant="8" id="G2U-Ig-TJF"/>
                             <constraint firstItem="Maz-HQ-lbW" firstAttribute="top" secondItem="m4u-2x-gmE" secondAttribute="bottom" constant="25" id="GdS-jb-jUH"/>
+                            <constraint firstItem="1ie-QQ-UFU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="HZK-oU-hSm"/>
                             <constraint firstItem="B0f-vH-Mqf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-48.5" id="Qgo-8y-wkt"/>
                             <constraint firstItem="B0f-vH-Mqf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qo0-8u-OhL"/>
                             <constraint firstItem="m4u-2x-gmE" firstAttribute="top" secondItem="baO-Tg-zbC" secondAttribute="bottom" constant="25" id="TZV-eW-IBF"/>
                             <constraint firstItem="m4u-2x-gmE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Z3B-Q4-c4y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1ie-QQ-UFU" secondAttribute="trailing" constant="20" id="eGk-sx-fwi"/>
                             <constraint firstItem="V3z-sR-RBL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eaq-Ic-xF6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qeX-QL-YRO" secondAttribute="trailing" constant="19" id="hVy-cH-Jul"/>
                             <constraint firstItem="Maz-HQ-lbW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="rCL-uh-jup"/>
@@ -160,6 +170,7 @@
                     <connections>
                         <outlet property="ballContainView" destination="B0f-vH-Mqf" id="gwy-la-nxk"/>
                         <outlet property="collectionView" destination="qeX-QL-YRO" id="F5C-MF-Jfd"/>
+                        <outlet property="rewardView" destination="1ie-QQ-UFU" id="LSb-0h-jVQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -25,6 +25,7 @@
 		09B23DDA2353623700B70A09 /* LottieExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B23DD92353623700B70A09 /* LottieExtention.swift */; };
 		09B23DDC235365C900B70A09 /* ribbon.json in Resources */ = {isa = PBXBuildFile; fileRef = 09B23DDB235365C900B70A09 /* ribbon.json */; };
 		09B23DDE2353665800B70A09 /* ribbon2.json in Resources */ = {isa = PBXBuildFile; fileRef = 09B23DDD2353665800B70A09 /* ribbon2.json */; };
+		09B23DE023536A4300B70A09 /* reward.json in Resources */ = {isa = PBXBuildFile; fileRef = 09B23DDF23536A4300B70A09 /* reward.json */; };
 		70FC10543C01E02245093FCF /* Pods_BinBallTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4780C17C0ACF507A77E82EAE /* Pods_BinBallTests.framework */; };
 		D96AFF3AE061226857618F20 /* Pods_BinBall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4ECCAC2AA0BAB5CAEC5006 /* Pods_BinBall.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		09B23DD92353623700B70A09 /* LottieExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieExtention.swift; sourceTree = "<group>"; };
 		09B23DDB235365C900B70A09 /* ribbon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ribbon.json; path = ../../../../../Downloads/ribbon.json; sourceTree = "<group>"; };
 		09B23DDD2353665800B70A09 /* ribbon2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ribbon2.json; path = ../../../../../Downloads/ribbon2.json; sourceTree = "<group>"; };
+		09B23DDF23536A4300B70A09 /* reward.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = reward.json; path = ../../../../../Downloads/reward.json; sourceTree = "<group>"; };
 		0C4ECCAC2AA0BAB5CAEC5006 /* Pods_BinBall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BinBall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C99D10E2E84056E9C5EC20 /* Pods-BinBall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinBall.release.xcconfig"; path = "Target Support Files/Pods-BinBall/Pods-BinBall.release.xcconfig"; sourceTree = "<group>"; };
 		4780C17C0ACF507A77E82EAE /* Pods_BinBallTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BinBallTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +166,7 @@
 				09568A12234B874A00B3DCE5 /* balloons.json */,
 				09B23DDB235365C900B70A09 /* ribbon.json */,
 				09B23DDD2353665800B70A09 /* ribbon2.json */,
+				09B23DDF23536A4300B70A09 /* reward.json */,
 			);
 			path = lotties;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B23DE023536A4300B70A09 /* reward.json in Resources */,
 				098949B72331384E00FDB34F /* LaunchScreen.storyboard in Resources */,
 				098949B42331384E00FDB34F /* Assets.xcassets in Resources */,
 				09621663234247D700526BAF /* Crycle.xib in Resources */,
