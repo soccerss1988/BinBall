@@ -8,6 +8,7 @@
 
 import UIKit
 import ImageIO
+import Lottie
 
 class ViewController: UIViewController {
     
@@ -25,23 +26,39 @@ class ViewController: UIViewController {
     var initNumber = 1
     var timer : Timer?
     var selectedBalls = [Crycle]()
+    
+    
+    //MARK: -lottie
+    lazy var winnerLottieView : AnimationView = {
+        return self.view.getLottieAnimation("balloons", loopMode: .loop)
+    }()
+    lazy var giftLottieView : AnimationView = {
+        return self.view.getLottieAnimation("balloons", loopMode: .loop)
+    }()
+    
         
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
+        self.mainViewStyle()
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
         self.initDiynamic(balls: self.balls)
         self.animator.addBehavior(self.collision)
+        self.testLottie()
     }
     
+    func mainViewStyle() {
+        self.collectionView.backgroundColor = UIColor(rgb:SWEET_BROWN)
+        self.ballContainView.backgroundColor = UIColor(rgb: OUTER_SPACE)
+    }
     
     func darwCircle(In:UIView,center:CGPoint,radius:CGFloat) {
         let circlePath = self.darwCircleBezierPath(center: center, radius: radius)
-        self.circleLayer = self.circleLayer(path: circlePath, storkeColor:.white)
+        self.circleLayer = self.circleLayer(path: circlePath, storkeColor:UIColor(rgb: OUTER_SPACE))
         In.layer.addSublayer(self.circleLayer!)
         self.collision.addBoundary(withIdentifier: "circle" as NSCopying, for: circlePath)
     }
@@ -69,7 +86,7 @@ class ViewController: UIViewController {
         
         //彈性
         self.bevar = UIDynamicItemBehavior(items: balls)
-        self.bevar.elasticity = 0.9
+        self.bevar.elasticity = 0.85
         self.animator.addBehavior(self.bevar)
         
         //gra
@@ -92,13 +109,20 @@ class ViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         self.ballContainView.layer.cornerRadius = self.ballContainView.frame.size.width/2
         self.ballContainView.layer.masksToBounds = true
+        
+        var size : CGFloat = 250
+//        self.giftLottieView.frame = CGRect(x: self.ballContainView.frame.minX - size/5, y: self.ballContainView.frame.maxY - size, width: size, height: size)
+//
+//        size = 300
+//        self.winnerLottieView.frame = CGRect(x: self.ballContainView.frame.maxX - size/2, y: self.ballContainView.frame.maxY - size, width: size, height: size)
+        
     }
     
     
     //MARK: - Button Action
     @IBAction func addAction(_ sender: Any) {
         for _ in 1...46 {
-            self.addNewBall(number: initNumber, radius: 48)
+            self.addNewBall(number: initNumber, radius: self.view.screenSize().width*0.035)
             initNumber += 1
         }
         
@@ -121,7 +145,6 @@ class ViewController: UIViewController {
     
     //順間推力
     @objc func InstantPush() {
-        print("PUSH")
         var bb = [Crycle]()
         for _ in 0 ..< self.balls.count/4 {
             let getball = Int(arc4random()) % Int(self.balls.count)
@@ -129,9 +152,15 @@ class ViewController: UIViewController {
         }
     
         self.instantaneousPush = UIPushBehavior(items: bb, mode: UIPushBehavior.Mode.instantaneous)
-        let acr = Int(arc4random()) % Int(Double.pi * 2)
+        var acr = Int(arc4random()) % Int(Double.pi * 2)
         
-        self.instantaneousPush?.setAngle(-CGFloat(acr), magnitude: 3)
+        
+        let direction = Int(arc4random() % 1)
+        if direction == 0 {
+            acr = -acr
+        }
+        print("push agnle = \(acr)")
+        self.instantaneousPush?.setAngle(CGFloat(acr), magnitude: 3)
         self.animator.addBehavior(self.instantaneousPush)
     }
     
@@ -140,7 +169,6 @@ class ViewController: UIViewController {
         if totoalCount > 0 {
             let selectedIndex = Int(arc4random()) % totoalCount
             let selectBall = self.balls[selectedIndex]
-            print(selectBall.numberLab.text!)
             self.balls.remove(at: selectedIndex)
             self.removeCollision(ball: selectBall)
             if self.balls.count == 0 {
@@ -151,10 +179,11 @@ class ViewController: UIViewController {
             //add selection ball in collecion view
             self.selectedBalls.append(selectBall)
             //reload collecion
-            let lastItemIndex = NSIndexPath(item:self.selectedBalls.count , section: 0)
-            self.collectionView.scrollToItem(at: lastItemIndex as IndexPath, at: .bottom, animated: true)
             self.collectionView.reloadData()
+            
             //with animaiotn
+            let lastItemIndex = NSIndexPath(item:self.selectedBalls.count - 1 , section: 0)
+            self.collectionView.scrollToItem(at: lastItemIndex as IndexPath, at: .bottom, animated: true)
         }
     }
     
@@ -172,17 +201,27 @@ class ViewController: UIViewController {
         //stop movie
         if let timer = self.timer {
             timer.invalidate()
+            self.timer = nil
         }
         
         //remvoe
+        self.balls.removeAll()
         self.selectedBalls.removeAll()
         self.collectionView.reloadData()
-       
     }
     
     func removeCollision(ball:Crycle) {
         ball.removeFromSuperview()
         self.collision.removeItem(ball)
+    }
+    
+    func testLottie() {
+        self.view.addSubview(self.winnerLottieView)
+        self.view.bringSubviewToFront(self.winnerLottieView)
+        self.view.addSubview(self.giftLottieView)
+        self.view.bringSubviewToFront(self.giftLottieView)
+        self.giftLottieView.play(fromFrame: 1, toFrame: 20, loopMode: .playOnce, completion: nil)
+        self.winnerLottieView.play(fromFrame: 20, toFrame: 30, loopMode: .playOnce, completion: nil)
     }
 }
 
@@ -200,4 +239,10 @@ extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource 
         return cell
     }
     
+}
+
+extension UIView {
+    func screenSize() -> CGRect {
+        return UIScreen.main.bounds
+    }
 }

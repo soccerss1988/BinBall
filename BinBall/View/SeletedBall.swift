@@ -14,8 +14,9 @@ class SeletedBall: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        UIView.animate(withDuration: 1) {
+        UIView.animate(withDuration: 0.7) {
             self.bgView.alpha = 1
+            self.bgView.backgroundColor = UIColor(rgb: UROBILIN)
         }
     }
 }
