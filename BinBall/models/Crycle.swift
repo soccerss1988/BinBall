@@ -11,8 +11,8 @@ import UIKit
 class Crycle: UIView {
     @IBOutlet weak var numberLab:UILabel!
     var theNumber = 0
-    let strokeColor = UIColor.orange.cgColor
-    let fillColor = UIColor.yellow.withAlphaComponent(0.9).cgColor
+    let strokeColor = UIColor.clear.cgColor
+    let fillColor = UIColor(rgb: UROBILIN).withAlphaComponent(0.9).cgColor
     var lineWidth: CGFloat = 1
     lazy var shapeLayer: CAShapeLayer = {
         let _shapeLayer = CAShapeLayer()
@@ -21,17 +21,8 @@ class Crycle: UIView {
         return _shapeLayer
     }()
     
-    lazy var textlayer :CATextLayer = {
-        let textlayer = CATextLayer()
-        textlayer.foregroundColor = UIColor.black.cgColor
-        return textlayer
-    }()
-    
     static func instance(owner:Any) -> Crycle {
         return Bundle.main.loadNibNamed("Crycle", owner: owner, options: nil)?.last as! Crycle
-    }
-    
-    func aweakformnib() {
     }
     
     override func layoutSubviews() {
@@ -42,6 +33,7 @@ class Crycle: UIView {
         let center = CGPoint(x: bounds.midX, y: bounds.midY)
         shapeLayer.path = circularPath(lineWidth: lineWidth, center: center).cgPath
         
+        self.numberLab.adjustsFontSizeToFitWidth = true
         self.bringSubviewToFront(self.numberLab)
     }
     

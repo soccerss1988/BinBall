@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0905D4CD2339177900F5EFB5 /* UIimage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D4CC2339177900F5EFB5 /* UIimage+Extension.swift */; };
 		0905D4CF2339196900F5EFB5 /* Crycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0905D4CE2339196900F5EFB5 /* Crycle.swift */; };
+		09568A16234B874A00B3DCE5 /* balloons.json in Resources */ = {isa = PBXBuildFile; fileRef = 09568A12234B874A00B3DCE5 /* balloons.json */; };
 		09621663234247D700526BAF /* Crycle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09621662234247D700526BAF /* Crycle.xib */; };
 		09621667234886B500526BAF /* SeletedBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09621665234799F400526BAF /* SeletedBall.swift */; };
 		09621668234887B400526BAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098949AC2331384D00FDB34F /* SceneDelegate.swift */; };
@@ -19,14 +20,12 @@
 		098949B72331384E00FDB34F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098949B52331384E00FDB34F /* LaunchScreen.storyboard */; };
 		098949C22331384E00FDB34F /* BinBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098949C12331384E00FDB34F /* BinBallTests.swift */; };
 		098949CE233138FB00FDB34F /* NumberCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098949CD233138FB00FDB34F /* NumberCollection.swift */; };
-		09A439A6233283010040A62D /* 8606-gift-box-effect.json in Resources */ = {isa = PBXBuildFile; fileRef = 09A4399D233283000040A62D /* 8606-gift-box-effect.json */; };
-		09A439A8233283010040A62D /* 6902-exploding-ribbon-and-confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 09A4399F233283000040A62D /* 6902-exploding-ribbon-and-confetti.json */; };
-		09A439A9233283010040A62D /* 9407-dream-catcher.json in Resources */ = {isa = PBXBuildFile; fileRef = 09A439A0233283000040A62D /* 9407-dream-catcher.json */; };
-		09A439AB233283010040A62D /* 1710-balloons-with-string.json in Resources */ = {isa = PBXBuildFile; fileRef = 09A439A2233283000040A62D /* 1710-balloons-with-string.json */; };
-		09A439AC233283010040A62D /* 1739-birthday.json in Resources */ = {isa = PBXBuildFile; fileRef = 09A439A3233283010040A62D /* 1739-birthday.json */; };
-		09A439AD233283010040A62D /* 4695-soft-bouncy-blob.json in Resources */ = {isa = PBXBuildFile; fileRef = 09A439A4233283010040A62D /* 4695-soft-bouncy-blob.json */; };
-		09C9FF7E2333C41100B0F12A /* 8606-gift-box-effect.gif.json in Resources */ = {isa = PBXBuildFile; fileRef = 09C9FF7D2333C41100B0F12A /* 8606-gift-box-effect.gif.json */; };
-		09C9FF802333C57500B0F12A /* agif2opt.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09C9FF7F2333C57500B0F12A /* agif2opt.gif */; };
+		09B23DD623534B6600B70A09 /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B23DD523534B6600B70A09 /* UIColorExtention.swift */; };
+		09B23DD823534CC300B70A09 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B23DD723534CC300B70A09 /* Constant.swift */; };
+		09B23DDA2353623700B70A09 /* LottieExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B23DD92353623700B70A09 /* LottieExtention.swift */; };
+		09B23DDC235365C900B70A09 /* ribbon.json in Resources */ = {isa = PBXBuildFile; fileRef = 09B23DDB235365C900B70A09 /* ribbon.json */; };
+		09B23DDE2353665800B70A09 /* ribbon2.json in Resources */ = {isa = PBXBuildFile; fileRef = 09B23DDD2353665800B70A09 /* ribbon2.json */; };
+		09B23DE023536A4300B70A09 /* reward.json in Resources */ = {isa = PBXBuildFile; fileRef = 09B23DDF23536A4300B70A09 /* reward.json */; };
 		70FC10543C01E02245093FCF /* Pods_BinBallTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4780C17C0ACF507A77E82EAE /* Pods_BinBallTests.framework */; };
 		D96AFF3AE061226857618F20 /* Pods_BinBall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4ECCAC2AA0BAB5CAEC5006 /* Pods_BinBall.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +43,7 @@
 /* Begin PBXFileReference section */
 		0905D4CC2339177900F5EFB5 /* UIimage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimage+Extension.swift"; sourceTree = "<group>"; };
 		0905D4CE2339196900F5EFB5 /* Crycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crycle.swift; sourceTree = "<group>"; };
+		09568A12234B874A00B3DCE5 /* balloons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = balloons.json; path = ../../../../../Downloads/balloons.json; sourceTree = "<group>"; };
 		09621662234247D700526BAF /* Crycle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Crycle.xib; sourceTree = "<group>"; };
 		09621665234799F400526BAF /* SeletedBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeletedBall.swift; sourceTree = "<group>"; };
 		098949A72331384D00FDB34F /* BinBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,14 +58,12 @@
 		098949C12331384E00FDB34F /* BinBallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinBallTests.swift; sourceTree = "<group>"; };
 		098949C32331384E00FDB34F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		098949CD233138FB00FDB34F /* NumberCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCollection.swift; sourceTree = "<group>"; };
-		09A4399D233283000040A62D /* 8606-gift-box-effect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "8606-gift-box-effect.json"; sourceTree = "<group>"; };
-		09A4399F233283000040A62D /* 6902-exploding-ribbon-and-confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "6902-exploding-ribbon-and-confetti.json"; sourceTree = "<group>"; };
-		09A439A0233283000040A62D /* 9407-dream-catcher.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9407-dream-catcher.json"; sourceTree = "<group>"; };
-		09A439A2233283000040A62D /* 1710-balloons-with-string.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "1710-balloons-with-string.json"; sourceTree = "<group>"; };
-		09A439A3233283010040A62D /* 1739-birthday.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "1739-birthday.json"; sourceTree = "<group>"; };
-		09A439A4233283010040A62D /* 4695-soft-bouncy-blob.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4695-soft-bouncy-blob.json"; sourceTree = "<group>"; };
-		09C9FF7D2333C41100B0F12A /* 8606-gift-box-effect.gif.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "8606-gift-box-effect.gif.json"; path = "../../../../../Downloads/8606-gift-box-effect.gif.json"; sourceTree = "<group>"; };
-		09C9FF7F2333C57500B0F12A /* agif2opt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = agif2opt.gif; path = ../../../../agif2opt.gif; sourceTree = "<group>"; };
+		09B23DD523534B6600B70A09 /* UIColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
+		09B23DD723534CC300B70A09 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		09B23DD92353623700B70A09 /* LottieExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieExtention.swift; sourceTree = "<group>"; };
+		09B23DDB235365C900B70A09 /* ribbon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ribbon.json; path = ../../../../../Downloads/ribbon.json; sourceTree = "<group>"; };
+		09B23DDD2353665800B70A09 /* ribbon2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ribbon2.json; path = ../../../../../Downloads/ribbon2.json; sourceTree = "<group>"; };
+		09B23DDF23536A4300B70A09 /* reward.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = reward.json; path = ../../../../../Downloads/reward.json; sourceTree = "<group>"; };
 		0C4ECCAC2AA0BAB5CAEC5006 /* Pods_BinBall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BinBall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C99D10E2E84056E9C5EC20 /* Pods-BinBall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinBall.release.xcconfig"; path = "Target Support Files/Pods-BinBall/Pods-BinBall.release.xcconfig"; sourceTree = "<group>"; };
 		4780C17C0ACF507A77E82EAE /* Pods_BinBallTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BinBallTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +134,9 @@
 				098949B52331384E00FDB34F /* LaunchScreen.storyboard */,
 				098949B82331384E00FDB34F /* Info.plist */,
 				0905D4CC2339177900F5EFB5 /* UIimage+Extension.swift */,
+				09B23DD523534B6600B70A09 /* UIColorExtention.swift */,
+				09B23DD723534CC300B70A09 /* Constant.swift */,
+				09B23DD92353623700B70A09 /* LottieExtention.swift */,
 			);
 			path = BinBall;
 			sourceTree = "<group>";
@@ -162,14 +163,10 @@
 		098949CF23326C9900FDB34F /* lotties */ = {
 			isa = PBXGroup;
 			children = (
-				09C9FF7D2333C41100B0F12A /* 8606-gift-box-effect.gif.json */,
-				09A439A2233283000040A62D /* 1710-balloons-with-string.json */,
-				09A439A3233283010040A62D /* 1739-birthday.json */,
-				09A439A4233283010040A62D /* 4695-soft-bouncy-blob.json */,
-				09A4399F233283000040A62D /* 6902-exploding-ribbon-and-confetti.json */,
-				09A4399D233283000040A62D /* 8606-gift-box-effect.json */,
-				09A439A0233283000040A62D /* 9407-dream-catcher.json */,
-				09C9FF7F2333C57500B0F12A /* agif2opt.gif */,
+				09568A12234B874A00B3DCE5 /* balloons.json */,
+				09B23DDB235365C900B70A09 /* ribbon.json */,
+				09B23DDD2353665800B70A09 /* ribbon2.json */,
+				09B23DDF23536A4300B70A09 /* reward.json */,
 			);
 			path = lotties;
 			sourceTree = "<group>";
@@ -278,18 +275,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B23DE023536A4300B70A09 /* reward.json in Resources */,
 				098949B72331384E00FDB34F /* LaunchScreen.storyboard in Resources */,
-				09A439A8233283010040A62D /* 6902-exploding-ribbon-and-confetti.json in Resources */,
-				09C9FF7E2333C41100B0F12A /* 8606-gift-box-effect.gif.json in Resources */,
-				09A439AB233283010040A62D /* 1710-balloons-with-string.json in Resources */,
-				09A439AC233283010040A62D /* 1739-birthday.json in Resources */,
-				09C9FF802333C57500B0F12A /* agif2opt.gif in Resources */,
-				09A439A6233283010040A62D /* 8606-gift-box-effect.json in Resources */,
 				098949B42331384E00FDB34F /* Assets.xcassets in Resources */,
 				09621663234247D700526BAF /* Crycle.xib in Resources */,
+				09B23DDC235365C900B70A09 /* ribbon.json in Resources */,
+				09B23DDE2353665800B70A09 /* ribbon2.json in Resources */,
+				09568A16234B874A00B3DCE5 /* balloons.json in Resources */,
 				098949B22331384D00FDB34F /* Main.storyboard in Resources */,
-				09A439AD233283010040A62D /* 4695-soft-bouncy-blob.json in Resources */,
-				09A439A9233283010040A62D /* 9407-dream-catcher.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,9 +370,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				098949AF2331384D00FDB34F /* ViewController.swift in Sources */,
+				09B23DDA2353623700B70A09 /* LottieExtention.swift in Sources */,
 				09621668234887B400526BAF /* SceneDelegate.swift in Sources */,
+				09B23DD823534CC300B70A09 /* Constant.swift in Sources */,
 				09621667234886B500526BAF /* SeletedBall.swift in Sources */,
 				0905D4CD2339177900F5EFB5 /* UIimage+Extension.swift in Sources */,
+				09B23DD623534B6600B70A09 /* UIColorExtention.swift in Sources */,
 				098949AB2331384D00FDB34F /* AppDelegate.swift in Sources */,
 				098949CE233138FB00FDB34F /* NumberCollection.swift in Sources */,
 				0905D4CF2339196900F5EFB5 /* Crycle.swift in Sources */,
